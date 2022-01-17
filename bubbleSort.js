@@ -85,7 +85,7 @@ bubbleSort3 = (numArr) => {
   // console.log(newArr, 49);
 
   //make a swap function
-  swap = (arr, i, j = i + 1) => {
+  const swap = (arr, i, j = i + 1) => {
     [arr[i], arr[j]] = [arr[j], arr[i]]; 
     return arr;
   }
@@ -101,7 +101,6 @@ bubbleSort3 = (numArr) => {
         swap(arr, i);
       }
     }
-  console.log(count, 104);
   return arr;
   }; //repeat for n - 1 times.
 
